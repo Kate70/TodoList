@@ -1,38 +1,139 @@
-.App {
-  text-align: center;
+:root{
+    --main-color: rgb(25, 245, 237)
+}
+form{
+    margin-top: 30px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.form-container{
+    width: 450px;
+    margin: auto ;
+    border: 2px solid rgb(5, 5, 5);
+    backdrop-filter: blur(5px);
+    /* //background-color: var(--main-color); */
+    height: 160px;
+    border-radius: 15px;
+    box-shadow: 0 0 55px black;
+    align-items: center;
+   
+    
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+}
+.form-header{
+   padding: 10px;
+   font-weight: 950;
+   font-size: 40px;
+   text-shadow: 2px 2px 5px rgb(85, 82, 77);
+   text-align: center;
+    
+    
+}
+.input-container{
+    display: flex;
+}
+.input{
+    height: 2rem;
+    width: 250px;
+    margin-left: 55px;
+    padding: auto;
+   
+    border-radius: 13px;
+    outline: none;
+    padding:0 12px;
+}
+.input:focus {
+    background-color: #fffdfd;
+    border: 1px solid #b8adad;
+    padding:0 12px;
   }
+
+
+.button-plus{
+    height: 2rem;
+    margin-left: 18px;
+    border: 1px solid black;
+    padding-right: 5px;
+    border-radius: 13px;
+    background-color:none;
+    transition: all 0.8s cubic-bezier(0.10, 0.84, 0.44, 1);
+    
+}
+.button-plus:hover{
+    transform: translate(10px);
+}
+.add-button{
+    background-color:transparent;
+    border: none;
+    border-radius: 13px;
+    font-size: 25px;
+}
+.list-container{
+    backdrop-filter: blur(5px);
+    width: 450px;
+    height: auto;
+    border: 2px solid rgb(5, 5, 5);
+    margin: auto;
+    margin-top:25px;
+    border-radius: 15px;
+    box-shadow: 0 0 55px black;
+   };
+  
+
+
+.todo-list{
+    margin: auto;
+    padding: 0;
+}
+.fas fa-plus-circle{
+    font-size: 20px;
+}
+.completed{
+    text-decoration: line-through;
+    opacity: 0.3;
+}
+.item-container{
+    border: 1px solid black;
+    padding: 10px 15px;
+    margin-top: 4px;
+    margin-bottom: 8px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 13px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+}
+.text{
+    max-width: 200px;
+    word-wrap: break-word;
+    border-radius: 13px;
+    font-size: 30px;
+    font-weight: 600;
+}
+.text :active{
+    border-radius: 13px;
+}
+.buttons{
+ right: 8px;
+    background: transparent;
+    font-size: 35px;
+   
+}
+.buttons span{
+    margin: 8px 10px;
+}
+.save-button{
+    background-color:transparent;
+    border: 1px solid black;
+    border-radius: 13px;
+    font-size: 25px;
+
+}
+input.edit-box{
+    border-radius: 13px;
+    padding-left: 8px;
+    
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
